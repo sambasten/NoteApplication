@@ -39,7 +39,8 @@ search(search_text){
 /**function to delete note id
 */
 toDelete(note_id){
-	delete noteList[note_id];
+	result = noteList.splice(note_id,1);
+	return result;
 }
 
 }
