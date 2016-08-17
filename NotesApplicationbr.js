@@ -20,10 +20,13 @@ list(){
 		console.log(noteList[note_id]);
 		console.log('By Author' + this.author)
 	}
-/**function to get the ID of the note
+/**function to get the ID of the note and 
+*return the content of that index as a string
 */
 get(note_id){
+	return noteList[note_id];
+}
 
-}
-}
+/**function to 
+*/
 }
