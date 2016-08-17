@@ -23,7 +23,7 @@ list(){
 /**function to get the ID of the note and 
 *return the content of that noteid index as a string
 */
-get(note_id){
+toGet(note_id){
 	return noteList[note_id];
 }
 
@@ -39,8 +39,13 @@ search(search_text){
 /**function to delete note id
 */
 toDelete(note_id){
-	result = noteList.splice(note_id,1);
-	return result;
+ 	noteList.splice(note_id,1); //removes the element with index note_id
+	return noteList;
 }
-
+/**function to edit note content
+*/
+edit(note_id, new_content){
+	noteList[note_id] = new_content //assign the value of noteid index to newcontent
+	return noteList;
+}
 }
