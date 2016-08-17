@@ -31,5 +31,15 @@ get(note_id){
 */
 search(search_text){
 	console.log('Showing result for search ' + search_text)
+	console.log('Note ID: '+ note_id);
+	console.log(noteList[note_id]);
+	console.log('By Author' + this.author)
 }
+
+/**function to delete note id
+*/
+toDelete(note_id){
+	delete noteList[note_id];
+}
+
 }
