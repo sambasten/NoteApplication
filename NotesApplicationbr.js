@@ -17,9 +17,9 @@ create(note_content) {
 */
 list(){
 	for (let note_id in this.noteList){
-		console.log('Note ID: '+ note_id);
-		console.log(this.noteList[note_id]);
-		console.log('By Author ' + this.author)
+		console.log('Note ID: '+ note_id + '\n'
+                    +this.noteList[note_id] + '\n'
+                    +'By Author ' + this.author);
 	}
 }
 /**function to get the ID of the note and 
@@ -37,10 +37,10 @@ toGet(note_id){
 search(search_text){
 		for(let note_id in this.noteList){ //loop through noteList to search for the text
 			if (this.noteList[note_id].includes(search_text)){
-				console.log('Showing result for search: ' + '['+search_text+']');
-				console.log('Note ID: '+ note_id);
-				console.log(this.noteList[note_id]);
-				console.log('By Author ' + this.author)
+				console.log('Showing result for search: ' + '['+search_text+']' + '\n'
+                             + 'Note ID: ' + note_id + '\n'
+                             + this.noteList[note_id] + '\n'
+                             +'By Author ' + this.author);
 			}
 			return 'Not Found' //returns this if the text is not found in the noteList
 		}
