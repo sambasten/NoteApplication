@@ -16,7 +16,7 @@
     * get(note_id) - This function takes a note_id which refers to the index of the note in the notes list and returns the content of that note as a string.
     * search(search_text) - This function take a search string, search_text and returns all the notes with that text within it in the following format:
     
-        Showing results for search ```sh‘[<search_text>]’```
+        Showing results for search ```‘[<search_text>]’```
         ```sh
         Note ID: [note_id]
 	    [NOTE_CONTENT]
